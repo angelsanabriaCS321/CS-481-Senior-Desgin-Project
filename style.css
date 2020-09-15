@@ -1,9 +1,41 @@
+body{
+	background-color: lightblue;
+
+}
+
+.mapouter {
+	padding: 10px;
+	position: relative;
+	text-align: right;
+	height: auto;
+	width: 100%;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 500px;
+	width: 651px;
+}
+
 /* resizes the logo */
 logo{
 	width: 100%;
 	height: auto;
 }
 
+h2{
+	float: left;
+}
+
+/* map */
+/* img{
+	padding: 10px;
+	border-radius: 5px;
+	max-width: 100%;
+	height: auto;
+
+} */
 /* center stuff */
 .center {
 	display: block;
@@ -63,6 +95,7 @@ logo{
 
 /*creates the parameters and look of the table*/
 table {
+
 	font-family: arial, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
@@ -76,4 +109,25 @@ td, th {
 
 tr:nth-child(even) {
 	background-color: #dddddd;
+}
+
+ul {
+    margin: 20px;
+}
+
+.input-color {
+    position: relative;
+}
+.input-color p {
+    padding-left: 20px;
+		/* background-color: yellow; */
+}
+.input-color .color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #ccc;
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
