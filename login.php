@@ -14,7 +14,7 @@
 
 	<div>
 	<label for="password">Password:
-	<input type="password" id="password" name="password" placeholder="password" value="<?php echo isset($_SESSION['password']) ? $_SESSION['password' : ''; ?>]"required/>
+	<input type="password" id="password" name="password" placeholder="password" value="<?php echo isset($_SESSION['password']) ? $_SESSION['password'] : ''; ?>"required/>
 	</div>
 
 	  <div>
