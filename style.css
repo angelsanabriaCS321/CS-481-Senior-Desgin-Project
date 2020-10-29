@@ -3,6 +3,30 @@ body{
 
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff00;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightgrey;
+}
+
 .mapouter {
 	padding: 10px;
 	position: relative;
@@ -61,15 +85,21 @@ h2{
 /* centers the home tag */
 .home{
 	position: absolute;
-	top: 8px;
+	top: 10px;
 	left: 16px;
 }
 
 /* places the sign up/log in feture */
 .login{
 	position: absolute;
-	top: 8px;
+	top: 10px;
 	right: 16px;
+}
+
+.signup{
+	position: absolute;
+	top: 8px;
+	right: 80px;
 }
 
 /* creates the parameters of the image */
@@ -89,7 +119,7 @@ h2{
     height:90%; /* = 100% - 2*5% padding */
     width:90%; /* = 100% - 2*5% padding */
     padding: 5%;
-    background-color: grey;
+    background-color: white;
 
 }
 

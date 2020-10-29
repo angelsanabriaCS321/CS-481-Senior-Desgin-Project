@@ -1,18 +1,10 @@
-<html>
-<header>
-	<title>Ada County Covid-19 Tracker</title>
-	<link rel="stylesheet" href="style.css">
-</header>
-
-<body>
-	<!--The div element for the map -->
-	<!-- <div class="ada-map">
-			<img src="Ada County MLS Area Map.jpg" alt="AdaMap">
-		</div> -->
-		<!-- data base credentials mysql://b4744ad8bd3094:856a3367@us-cdbr-east-02.cleardb.com/heroku_eee974665cdf065?reconnect=true-->
-		<h2>Ada County Map</h2>
-		<div class="mapouter"> <a href = "signup.php">Sign Up</a>/<a href="login.php">Log In</a></div>
-		<div class="gmap_canvas"> 
+<?php
+  include_once 'header.php';
+ ?>
+<section>
+	<h2>Ada County Map</h2>
+	<div class="mapouter">
+		<div class="gmap_canvas">
 			<iframe width="651" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ada%20County&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 			</iframe>
 		</div>
@@ -51,39 +43,37 @@
 				<td>Ada County</td>
 				<td>16,710</td>
 			</tr>
-
-			<tr>
-				<td>Boise County</td>
-				<td>82</td>
-			</tr>
-
+			
 			<tr>
 				<td>Canyon County</td>
 				<td>10,013</td>
 			</tr>
-
-			<tr>
-				<td>Elmore County</td>
-				<td>530</td>
-			</tr>
-
-			<tr>
-				<td>Gem County</td>
-				<td>428</td>
-			</tr>
-
+			
 			<tr>
 				<td>Payette County</td>
 				<td>1,137</td>
 			</tr>
 
 			<tr>
+				<td>Elmore County</td>
+				<td>530</td>
+			</tr>
+			
+			<tr>
+				<td>Gem County</td>
+				<td>428</td>
+			</tr>
+
+			<tr>
 				<td>Owyhee County</td>
 				<td>398</td>
 			</tr>
+
+			<tr>
+				<td>Boise County</td>
+				<td>82</td>
+			</tr>
+
 		</table>
 
-
-</body>
-
-</html>
+</section>

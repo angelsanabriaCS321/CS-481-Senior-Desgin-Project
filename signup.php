@@ -1,36 +1,78 @@
+<?php
+session_start();
+?>
+
 <html>
- <head id ="signup_page">
-    <title>Sign Up</title>
- <h1>Please Sign Up</h1>
- </head>
-  <section>
-<form action="signup_handler.php" method="post">
-<fieldset>
+<head>
+	<center>
+	<?php require_once("signupheader.php");
+	?>
+	</center>
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<Center>
+	<span>  <h1>Sign-Up Page</h1> </span>
+	<p> Please fill in this form to create an account </P>
 
-<div>
-	<label for ="firstname">First Name:</label><br> 
-		<input type="text" id="firstname" name="firstname" placeholder='first name' value="<?php echo isset($setup['firstname']) ? $setup['firstname'] : ''; ?>" required/>
-	<br><br>
+	<form method="post" action="signuphandler.php">
+		<div>  <label for="email">  <div> <b>Email</b> </div> </label>
+			<div>
+				<input type="text" placeholder="Enter Email" name="email"
+				value="<?php echo isset($_SESSION['formInput']) ? $_SESSION['formInput']['email'] : ''; ?>"
+			</div>
+		</div>
+		<?php
+			if(isset($_SESSION['emailErr'])) {
+				echo "<div id ='error'>" . $_SESSION['emailErr'] . "</div>";
+			}
+			unset($_SESSION['emailErr']);
 
-	<label for ="lastname">Last Name: </label><br>
-		<input type="text" id="lastname" name="lastname" placeholder='last name' value="<?php echo isset($setup['lastname']) ? $setup['lastname'] : ''; ?>" required/>
-	<br><br>
+			if(isset($_SESSION['email_used'])) {
+				echo "<div id ='error'>" . $_SESSION['email_used'] . "</div>";
+			}
+			unset($_SESSION['email_used']);
+		?>
 
-	<label for ="email">Email:</label><br>
-		<input type="email" id="email" name="email" placeholder='email' value="<?php echo isset($setup['email']) ? $setup['email'] : ''; ?>"required/>
-	<br><br>
 
-	<label for ="password">Password:</label><br> 
-		<input type="password" id="password" name="password" placeholder='password' value="<?php echo isset($setup['password']) ? $setup['password'] : ''; ?>"required/>
-	<br><br>
+		<div>
+			<label for="password"> <div> <b>Password</b> </div> </label>
+			<div> <input type="password" placeholder="Enter Password" name="password" >
+			</div>
+		</div>
+		<?php
+		if(isset($_SESSION['passwordErr'])) {
+			echo "<div id ='error'>" . $_SESSION['passwordErr'] . "</div>";
+		}
+		unset($_SESSION['passwordErr']);
+		?>
 
-	<label for ="confirmedpassword">Confirm Password:</label><br> 
-	<input type="password" id="confirmedpassword" name="confirmedpassword" placeholder='confirmed password'required/>
-	<br><br>
+		<div>
+			<label for="psw-repeat"> <div> <b>Re-enter Password</b> </div></label>
 
-	<button type="submit" value ="submit">Sign Up</button>
-	<button type="reset">Reset</button>
-</fieldset>
-</form>
-</section>
-</html>
+			<div><input type="password" placeholder="Confirm Password" name="password2" >
+			</div>
+		</div>
+		<?php
+		if(isset($_SESSION['password2Err'])) {
+			echo "<div id ='error'>" . $_SESSION['password2Err'] . "</div>";
+		}
+		unset($_SESSION['password2Err']);
+		?>
+		<div><input type="submit" value="Sign-up"></div>
+
+		<div class="signup-button">
+		  <a href="index.php">Sign-In</a>
+		</div>
+
+		<?php
+		if(isset($_SESSION['message'])){
+			echo "<div id ='error'>" . $_SESSION['message'] . "</div>";
+		}
+		unset($_SESSION['message']);
+		unset($_SESSION['valid']);
+		unset($_SESSION['formInput']);
+			?>
+
+	</form>
+</Center>
