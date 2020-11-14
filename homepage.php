@@ -1,12 +1,14 @@
 <?php
   include_once 'header.php';
  ?>
+ <!-- <div> 
+	 <h2>Map of Idaho with confirmed cases</h2> 
+ </div> -->
 <section>
-	<h2>Ada County Map</h2>
 	<div class="mapouter">
 		<div class="gmap_canvas">
-			<iframe width="651" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ada%20County&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-			</iframe>
+      <iframe src="https://www.arcgis.com/apps/opsdashboard/index.html#/3bd33bc6db314295920213bd51efbc4a" width= 1200px; height = 1000px; marginheight="0" marginwidth="0" frameborder="0"></iframe>
+      <!-- <a href="adacounty.php">World-Data</a> -->
 		</div>
 		<div>
 			<ul>
@@ -31,49 +33,48 @@
 		</div>
 
 
-		<h2>Covid-19 Cases Throughout Idaho Counties</h2>
+		<!-- <h2>Covid-19 Cases in Ada County</h2> -->
 
-		<table>
+		<!-- <table>
 			<tr>
-				<th>County</th>
-				<th>Confirmed Cases</th>
-			</tr>
-
-			<tr>
-				<td>Ada County</td>
-				<td>16,710</td>
-			</tr>
-			
-			<tr>
-				<td>Canyon County</td>
-				<td>10,013</td>
-			</tr>
-			
-			<tr>
-				<td>Payette County</td>
-				<td>1,137</td>
+				<th>City</th>
+				<th>Case%</th>
 			</tr>
 
 			<tr>
-				<td>Elmore County</td>
-				<td>530</td>
-			</tr>
-			
-			<tr>
-				<td>Gem County</td>
-				<td>428</td>
+				<td>Boise</td>
+				<td>12% Increase</td>
 			</tr>
 
 			<tr>
-				<td>Owyhee County</td>
-				<td>398</td>
+				<td>Eagle</td>
+				<td>3% Increase</td>
 			</tr>
 
 			<tr>
-				<td>Boise County</td>
-				<td>82</td>
+				<td>Garden City</td>
+				<td>3% Decrease</td>
 			</tr>
 
-		</table>
+			<tr>
+				<td>Hidden Springs</td>
+				<td>4% Increase</td>
+			</tr>
+
+			<tr>
+				<td>Kuna</td>
+				<td>7% Decrease</td>
+			</tr>
+
+			<tr>
+				<td>Meridian</td>
+				<td>5% Increase</td>
+			</tr>
+
+			<tr>
+				<td>Star</td>
+				<td>8% Increase</td>
+			</tr>
+		</table> -->
 
 </section>

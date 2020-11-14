@@ -1,6 +1,6 @@
 body, html {
   color: black;
-  background-color: lightblue;
+  background-color: #faefcd;
   line-height: 1.8;
 }
 .content p {
@@ -11,6 +11,7 @@ body, html {
   color: black;
   text-rendering: optimizeLegibility;
   padding: 0;
+  font-size: 15px;
 }
 
 .content {
