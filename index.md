@@ -30,4 +30,4 @@ We added an about page explaining the features of the website
 ### Additional Notes
 Once you have logged out of the website you can not go back to the previous page and see the website's features. You must log back into the website in order to access the websites features.
 
-Feel free to check out our website:[Website](https://murmuring-gorge-12306.herokuapp.com/index.php)
+Feel free to check out our [Website](https://murmuring-gorge-12306.herokuapp.com/index.php)
