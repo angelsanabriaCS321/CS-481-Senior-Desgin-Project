@@ -1,8 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to our Covid-19 Website
 
-You can use the [editor on GitHub](https://github.com/angelsanabriaCS321/CS-481-Senior-Desgin-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Before you can access the Covid-19 data and map you must sign up and log in to the website
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
