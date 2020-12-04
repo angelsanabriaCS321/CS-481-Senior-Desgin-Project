@@ -7,7 +7,7 @@
 <section>
 	<div class="mapouter">
 		<div class="gmap_canvas">
-      <iframe src="https://www.arcgis.com/apps/opsdashboard/index.html#/3bd33bc6db314295920213bd51efbc4a" width= 1200px; height = 1000px; marginheight="0" marginwidth="0" frameborder="0"></iframe>
+      <iframe src="https://www.arcgis.com/apps/opsdashboard/index.html#/3bd33bc6db314295920213bd51efbc4a" width= 100%; height = 900; marginheight="0" marginwidth="0" frameborder="0"></iframe>
       <!-- <a href="adacounty.php">World-Data</a> -->
 		</div>
 		<div>

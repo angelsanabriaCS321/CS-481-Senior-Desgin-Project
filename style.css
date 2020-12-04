@@ -28,17 +28,19 @@ li a:hover {
 }
 
 .mapouter {
-	padding: 10px;
+	padding-right: 100px;
+
 	position: relative;
 	text-align: right;
-	height: 500px;
+	height: auto;
 	width: 100%;
 }
 
 .gmap_canvas {
 	overflow: hidden;
 	background: none !important;
-	width: 1200px;
+	height: 100%;
+	width: 100%;
 }
 
 /* resizes the logo */

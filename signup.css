@@ -2,7 +2,7 @@ body{
   background-color: #faefcd;
 }
 form {
-  border: 3px solid #f1f1f1;
+  border: 1px solid #030303;
 }
 h1{
 text-align: center;
@@ -45,7 +45,7 @@ input[type=text], input[type=password] {
 
 input[type=submit] {
   width: 100%;
-  background-color: #0002;
+  background-color: #0001;
   color: black;
   padding: 14px 20px;
   margin: 8px 0;
@@ -70,7 +70,7 @@ button {
   text-decoration: none;
   background-color: white;
   margin: 4px 0;
-  border: none;
+  border: 1px solid #030303;
   border-radius: 4px;
 }
 .signup-button{
